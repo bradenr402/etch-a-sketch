@@ -10,24 +10,40 @@ html {
     flex: 1 1 0;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vh;
+    align-items: stretch;
+    align-content: stretch;
+    width: 750px;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.column {
+    height: auto;
+    width: auto;
 }
 
 body > div {
-    display: flex;
     margin: 10px;
     background-color: white;
 }
 
 .square {
-    width: 1em;
-    height: 1em;
     margin: 1px;
+    height: 1em;
+    width: 1em;
     background-color: lightgray;
 }
 
 .color {
     background-color: #006fee;
+}
+
+.size-button {
+    background-color: rgb(63, 169, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 14px 28px;
+    margin: 10px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
