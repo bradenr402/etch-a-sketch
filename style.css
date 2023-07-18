@@ -4,3 +4,28 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+
+body {
+    display: flex;
+    flex: 1 0 0;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body > div {
+    display: flex;
+    margin: 10px;
+    background-color: green;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    background-color: lightblue;
+}
+
+.square:hover {
+    background-color: #006fee;
+}
