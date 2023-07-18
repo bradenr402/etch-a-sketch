@@ -16,16 +16,16 @@ body {
 body > div {
     display: flex;
     margin: 10px;
-    background-color: green;
+    background-color: lightgray;
 }
 
 .square {
     width: 1em;
     height: 1em;
     margin: 1px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
-div.color {
+.color {
     background-color: #006fee;
 }

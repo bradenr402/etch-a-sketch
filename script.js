@@ -12,3 +12,22 @@ for (let i = 0; i < 32; i++) {
 
     container.appendChild(columnDiv);
 }
+
+let squares = document.getElementsByClassName('square');
+
+function startSketching() {
+    const gridSquares = document.querySelectorAll('div > .square');
+
+    gridSquares.forEach((item) => {
+        const gridSquare = item;
+        gridSquare.count = 0;
+        gridSquare.addEventListener('mouseenter', (e) => {
+            e.target.style.backgroundColor = 'blue';
+            e.target.style.opacity = 1;
+        });
+    });
+}
+
+const startButton = document.querySelector('.start-button');
+// startButton.addEventListener('click', startSketching());
+startSketching();
