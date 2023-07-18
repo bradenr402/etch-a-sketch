@@ -20,12 +20,12 @@ body > div {
 }
 
 .square {
-    width: 50px;
-    height: 50px;
+    width: 1em;
+    height: 1em;
     margin: 1px;
     background-color: lightblue;
 }
 
-.square:hover {
+div.color {
     background-color: #006fee;
 }
