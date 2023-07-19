@@ -45,8 +45,14 @@ function chooseGridSize() {
 }
 
 grid.addEventListener('mouseover', (e) => {
-    if (e.target.matches('.square')) {
+    if (e.target.matches('.square') && !(e.target.matches('.active'))) {
         e.target.classList.add('active');
+
+        let randomR = Math.random() * 255,
+            randomG = Math.random() * 255,
+            randomB = Math.random() * 255;
+
+        e.target.style.backgroundColor = `rgb(${randomR}, ${randomB}, ${randomG})`
     }
 });
 
