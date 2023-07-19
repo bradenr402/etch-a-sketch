@@ -5,6 +5,12 @@ html {
     box-sizing: inherit;
 }
 
+h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex: 1 1 0;
@@ -16,6 +22,8 @@ html {
     height: 750px;
     margin-left: auto;
     margin-right: auto;
+
+    background-color: lightgray;
 }
 .column {
     height: auto;
@@ -28,10 +36,9 @@ body > div {
 }
 
 .square {
-    margin: 1px;
     height: 1em;
     width: 1em;
-    background-color: lightgray;
+    background-color: white;
 }
 
 .color {
@@ -39,11 +46,12 @@ body > div {
 }
 
 .size-button {
-    background-color: rgb(63, 169, 255);
+    background-color: deepskyblue;
     border: none;
     border-radius: 10px;
     padding: 14px 28px;
     margin: 10px;
     font-size: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    align-self: center;
 }
