@@ -15,6 +15,7 @@ h1,
 h2,
 .settings {
     text-align: center;
+    color: #202124;
 }
 
 h1 {
@@ -41,12 +42,7 @@ h2 {
     background-color: #ececec;
 }
 
-.square.active {
-    background-color: black;
-}
-
-.size-button,
-.reset-button {
+button {
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -61,4 +57,22 @@ h2 {
 
 .reset-button {
     background-color: #ff5555;
+}
+
+.color-button {
+    
+    background: linear-gradient(217deg, 
+                    rgba(255, 0, 0, .8), 
+                    rgba(255, 0, 0, 0) 70.71%), 
+                linear-gradient(127deg, 
+                    rgba(0, 255, 0, .8), 
+                    rgba(0, 255, 0, 0) 70.71%), 
+                linear-gradient(336deg, 
+                    rgba(0, 0, 255, .8), 
+                    rgba(0, 0, 255, 0) 70.71%);
+}
+
+.black-button {
+    color: white;
+    background-color: #202124;
 }

@@ -2,6 +2,9 @@ const grid = document.querySelector('.grid');
 let gridSizeDisplay = document.querySelector('.grid-size');
 const resetBtn = document.querySelector('.reset-button');
 const sizeBtn = document.querySelector('.size-button');
+const colorBtn = document.querySelector('.color-button');
+const blackBtn = document.querySelector('.black-button');
+let colorMode = 'black';
 let squareSize = 16;
 
 createGrid(squareSize);
@@ -45,14 +48,16 @@ function chooseGridSize() {
 }
 
 grid.addEventListener('mouseover', (e) => {
-    if (e.target.matches('.square') && !(e.target.matches('.active'))) {
-        e.target.classList.add('active');
-
-        let randomR = Math.random() * 255,
+    if (e.target.matches('.square')) {
+        if (colorMode === 'black') {
+            e.target.style.backgroundColor = '#121212';
+        } else if (colorMode === 'color') {
+            let randomR = Math.random() * 255,
             randomG = Math.random() * 255,
             randomB = Math.random() * 255;
-
-        e.target.style.backgroundColor = `rgb(${randomR}, ${randomB}, ${randomG})`
+            
+            e.target.style.backgroundColor = `rgb(${randomR}, ${randomB}, ${randomG})`
+        }
     }
 });
 
@@ -63,3 +68,11 @@ sizeBtn.addEventListener('click', () => {
 });
 
 resetBtn.addEventListener('click', reset);
+
+colorBtn.addEventListener('click', () => {
+    colorMode = 'color';
+});
+
+blackBtn.addEventListener('click', () => {
+    colorMode = 'black';
+});
