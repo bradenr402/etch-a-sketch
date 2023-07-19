@@ -21,7 +21,7 @@ function createGrid(gridSize) {
         row.classList.add('row');
         grid.appendChild(row);
         for (let j = 0; j < gridSize; j++) {
-            row.appendChild(createDiv(grid.clientWidth / gridSize / 2));
+            row.appendChild(createDiv(grid.clientWidth / gridSize / 3));
         }
     }
 }
