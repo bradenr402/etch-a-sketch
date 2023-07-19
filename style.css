@@ -1,57 +1,64 @@
 html {
     box-sizing: border-box;
 }
+
 *, *::before, *::after {
     box-sizing: inherit;
+    margin: 0;
 }
 
-h1 {
-    font-size: 60px;
-    line-height: 1.2;
+body {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+h1,
+h2,
+.settings {
     text-align: center;
 }
 
-.container {
+h1 {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.grid {
     display: flex;
     flex: 1 1 0;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-    width: 750px;
-    height: 750px;
-    margin-left: auto;
-    margin-right: auto;
-
-    background-color: lightgray;
-}
-.column {
-    height: auto;
-    width: auto;
-}
-
-body > div {
-    margin: 10px;
-    background-color: white;
 }
 
 .square {
-    height: 1em;
-    width: 1em;
-    background-color: white;
+    background-color: #ececec;
 }
 
-.color {
-    background-color: #006fee;
+.square.active {
+    background-color: deepskyblue;
+}
+
+.size-button,
+.reset-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px 0 20px;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
 
 .size-button {
     background-color: deepskyblue;
-    border: none;
-    border-radius: 10px;
-    padding: 14px 28px;
-    margin: 10px;
-    font-size: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-    align-self: center;
+}
+
+.reset-button {
+    background-color: #ff5555;
 }
